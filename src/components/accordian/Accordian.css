@@ -1,0 +1,39 @@
+.wrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+.accordian{
+     width: 500px;
+     justify-content: center;
+     display: flex;
+     flex-flow: column;
+}
+
+.accordian button{
+     margin-bottom: 10px;
+     cursor: pointer;
+}
+
+.accordian .item{
+     background-color: #333;
+     margin-bottom: 10px;
+     padding: 10px 20px;
+}
+
+.accordian .title{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+}
+
+.accordian .title h3{
+     font-size: 1rem;
+}
+
+.content{
+     height: auto;
+}
