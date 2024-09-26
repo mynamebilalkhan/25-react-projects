@@ -23,15 +23,15 @@ The Accordion component provides an interactive way for users to expand and coll
 #### Usage
 
 1 **State Management:**
-     - The component maintains three pieces of state:
-          - `selected`: Tracks the currently selected item for single selection.
-          - `multiSelection`: A boolean that toggles between single and multi-selection modes.
-          - `multiple`: An array that holds IDs of items currently expanded in multi-selection mode.
+ - The component maintains three pieces of state:
+  - `selected`: Tracks the currently selected item for single selection.
+  - `multiSelection`: A boolean that toggles between single and multi-selection modes.
+  - `multiple`: An array that holds IDs of items currently expanded in multi-selection mode.
 
 2 **Event Handlers:**
 
-     - `handleSingleSelection`: Toggles the expansion of a single item based on its ID.
-     - `handleMultiSelection`: Adds or removes an item from the multiple array based on its current state.
+ - `handleSingleSelection`: Toggles the expansion of a single item based on its ID.
+ - `handleMultiSelection`: Adds or removes an item from the multiple array based on its current state.
 
 3 **Rendering:**
 
@@ -56,7 +56,6 @@ const data = [
   },
   // Add more items as needed
 ];
-
 ```
 
 #### Installation
@@ -67,28 +66,24 @@ To get started with this project:
 
 ```
 git clone <repository-url>
-
 ```
 
 2 Navigate into the project directory:
 
 ```
 cd 25-react-projects
-
 ```
 
 3 Install the dependencies:
 
 ```
 npm install
-
 ```
 
 4 Start the development server:
 
 ```
 npm run dev
-
 ```
 
 #### Conclusion
