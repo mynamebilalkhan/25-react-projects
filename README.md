@@ -115,6 +115,56 @@ The component uses the following CSS classes defined in RandomColor.css:
 - `.button-group`: Styles the group of buttons.
 - `.colorDisplay`: Displays the currently generated color value.
 
+## Project 3
+
+### Star Rating Component
+
+The `StarRating` component provides an interactive star rating system for users to evaluate or provide feedback on items or services. This component is visually appealing and enhances user experience by allowing easy and intuitive rating.
+
+#### Features
+
+- **Interactive Star Rating:** Users can click on stars to set their rating, providing immediate visual feedback.
+- **Hover Feedback:** Stars change appearance when hovered over, allowing users to preview their rating selection.
+
+#### Functionality
+
+1. **State Management:**
+  - `rating`: Keeps track of the selected rating by the user.
+  - `hover`: Temporarily holds the rating while the user hovers over the stars.
+
+2. **Event Handlers:**
+
+  - `handleClick()`: Updates the rating state when a star is clicked.
+  - `handleMouseEnter()`: Updates the hover state when the mouse enters a star, highlighting it and any previous stars.
+  - `handleMouseLeave()`: Resets the hover state to the current rating when the mouse leaves the star area.
+
+#### Usage
+
+To use the `StarRating` component, import it into your application and include it in your JSX:
+
+```
+import StarRating from './StarRating';
+
+function App() {
+  return (
+    <div>
+      <StarRating stars={5} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Styling
+
+The component uses the following CSS classes defined in `StarRating.css`:
+
+- `.wrapper`: Applies overall layout styles.
+- `.starRating`: Contains the star icons.
+- `.active`: Styles for active (selected) stars.
+- `.inactive`: Styles for inactive (unselected) stars.
+
 #### Installation
 
 To get started with this project:
