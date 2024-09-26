@@ -44,7 +44,7 @@ The Accordion component provides an interactive way for users to expand and coll
 
 The Accordion component expects data in the following format:
 
-```json
+```js
 const data = [
   {
     id: 1,
@@ -263,25 +263,25 @@ To get started with this project:
 
 1. Clone the repository:
 
-```
+```bash
 git clone <repository-url>
 ```
 
 2. Navigate into the project directory:
 
-```
+```bash
 cd 25-react-projects
 ```
 
 3. Install the dependencies:
 
-```
+```bash
 npm install
 ```
 
 4. Start the development server:
 
-```
+```bash
 npm run dev
 ```
 
