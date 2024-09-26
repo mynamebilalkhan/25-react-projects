@@ -24,9 +24,9 @@ The Accordion component provides an interactive way for users to expand and coll
 
 1 **State Management:**
  - The component maintains three pieces of state:
-  - `selected`: Tracks the currently selected item for single selection.
-  - `multiSelection`: A boolean that toggles between single and multi-selection modes.
-  - `multiple`: An array that holds IDs of items currently expanded in multi-selection mode.
+   - `selected`: Tracks the currently selected item for single selection.
+   - `multiSelection`: A boolean that toggles between single and multi-selection modes.
+   - `multiple`: An array that holds IDs of items currently expanded in multi-selection mode.
 
 2 **Event Handlers:**
 
