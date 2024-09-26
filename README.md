@@ -8,6 +8,8 @@ This repository contains a single React application that integrates 25 different
 
 The app is organized into distinct components, each representing a different project. This modular approach allows for easy navigation and understanding of the individual projects while maintaining a cohesive application structure.
 
+## Project 1
+
 ### Accordion Component
 
 #### Description
