@@ -75,12 +75,12 @@ The `RandomColor` component allows users to generate random colors in either HEX
 #### Functionality
 
 1. **State Management:**
- - `typeOfColor`: Tracks the selected color format (HEX or RGB).
- - `color`: Holds the generated color value.
+  - `typeOfColor`: Tracks the selected color format (HEX or RGB).
+  - `color`: Holds the generated color value.
 
 2. **Color Generation:**
- - The component generates random colors using utility functions for both HEX and RGB formats.
- - Users can switch between color types and generate a new random color with the click of a button.
+  - The component generates random colors using utility functions for both HEX and RGB formats.
+  - Users can switch between color types and generate a new random color with the click of a button.
 
 #### How It Works
  - HEX Color Generation:
@@ -119,25 +119,25 @@ The component uses the following CSS classes defined in RandomColor.css:
 
 To get started with this project:
 
-1 Clone the repository:
+1. Clone the repository:
 
 ```
 git clone <repository-url>
 ```
 
-2 Navigate into the project directory:
+2. Navigate into the project directory:
 
 ```
 cd 25-react-projects
 ```
 
-3 Install the dependencies:
+3. Install the dependencies:
 
 ```
 npm install
 ```
 
-4 Start the development server:
+4. Start the development server:
 
 ```
 npm run dev
