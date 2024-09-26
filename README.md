@@ -24,18 +24,18 @@ The Accordion component provides an interactive way for users to expand and coll
 
 #### Usage
 
-1 **State Management:**
+1. **State Management:**
  - The component maintains three pieces of state:
    - `selected`: Tracks the currently selected item for single selection.
    - `multiSelection`: A boolean that toggles between single and multi-selection modes.
    - `multiple`: An array that holds IDs of items currently expanded in multi-selection mode.
 
-2 **Event Handlers:**
+2. **Event Handlers:**
 
  - `handleSingleSelection`: Toggles the expansion of a single item based on its ID.
  - `handleMultiSelection`: Adds or removes an item from the multiple array based on its current state.
 
-3 **Rendering:**
+3. **Rendering:**
 
 - The component maps over the data array, creating an item for each entry. Each item has a title and an associated content section that is displayed based on user interaction.
 - If no data is available, a "No Data Found!" message is displayed.
@@ -59,6 +59,61 @@ const data = [
   // Add more items as needed
 ];
 ```
+
+## Project 2
+
+### Random Color Component
+
+The `RandomColor` component allows users to generate random colors in either HEX or RGB format. This interactive utility is designed to provide a quick and engaging way to explore color generation in React.
+
+#### Features
+
+- **Generate Random HEX Color:** Click the button to generate a random color in HEX format (e.g., `#FF5733`).
+- **Generate Random RGB Color:** Click the button to generate a random color in RGB format (e.g., `rgb(255, 87, 51)`).
+- **Dynamic Background Color:** The component's background color changes based on the generated color.
+
+#### Functionality
+
+1. **State Management:**
+ - `typeOfColor`: Tracks the selected color format (HEX or RGB).
+ - `color`: Holds the generated color value.
+
+2. **Color Generation:**
+ - The component generates random colors using utility functions for both HEX and RGB formats.
+ - Users can switch between color types and generate a new random color with the click of a button.
+
+#### How It Works
+ - HEX Color Generation:
+  - A random HEX color is created by selecting random characters from a predefined array of HEX digits (0-9, A-F).
+ - RGB Color Generation:
+  - A random RGB color is created by generating three random integers between 0 and 255 for the red, green, and blue channels.
+
+#### Usage
+
+To use the `RandomColor` component, import it into your application and include it in your JSX:
+
+```
+import RandomColor from './RandomColor';
+
+function App() {
+  return (
+    <div>
+      <RandomColor />
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Styling
+
+The component uses the following CSS classes defined in RandomColor.css:
+
+- `.wrapper`: Applies the background color and layout.
+- `.container`: Contains the button group and color display.
+- `.button-group`: Styles the group of buttons.
+- `.colorDisplay`: Displays the currently generated color value.
 
 #### Installation
 
