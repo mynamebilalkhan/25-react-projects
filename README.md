@@ -35,8 +35,8 @@ The Accordion component provides an interactive way for users to expand and coll
 
 3 **Rendering:**
 
-     - The component maps over the data array, creating an item for each entry. Each item has a title and an associated content section that is displayed based on user interaction.
-     - If no data is available, a "No Data Found!" message is displayed.
+- The component maps over the data array, creating an item for each entry. Each item has a title and an associated content section that is displayed based on user interaction.
+- If no data is available, a "No Data Found!" message is displayed.
 
 #### Example Data Structure
 
