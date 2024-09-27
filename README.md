@@ -257,6 +257,83 @@ The component can be customized further by:
 - **Adding Auto-Slide Functionality:** Use the `setTimeout` function within `useEffect` to automatically move between slides.
 - **Changing the Image Source:** Modify the `url` state to fetch images from a different API or local data source.
 
+## Project 5
+
+### Load More Component
+
+#### Overview
+
+The `LoadMore` component is a React component that fetches and displays a list of products from an API with a "Load More" button to display additional products. It demonstrates efficient data fetching, state management, and conditional rendering in React.
+
+#### Features
+
+- **Data Fetching:** Retrieves product data from an external API upon component mount.
+- **Pagination:** Displays a subset of products initially and loads additional products upon clicking the "Load More" button.
+- **Loading State:** Shows a loading indicator while fetching additional products.
+- **Disable Button:** The "Load More" button is disabled when all products have been loaded.
+
+#### Functionality
+
+1. **State Management:**
+  - `products`: Holds the list of products fetched from the API.
+  - `visibleProducts`: Controls the number of products displayed initially.
+  - `loading`: Indicates whether the component is currently fetching additional products.
+
+2. **Event Handlers:**
+  - `loadMoreProducts`: Fetches and adds more products to the displayed list when the "Load More" button is clicked.
+  - `fetchProducts`: Retrieves data from the API and updates the `products` state.
+
+3. **Rendering:**
+  - The component displays a list of products, each with its image and title.
+  - The "Load More" button is displayed conditionally based on whether more products are available.
+
+#### Usage
+
+To use the `LoadMore` component, import it into your application and include it in your JSX:
+
+```jsx
+import LoadMore from './LoadMore';
+
+function App() {
+  return (
+    <div>
+      <LoadMore />
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Styling
+
+The component uses the following CSS classes defined in `LoadMore.css`:
+- `.wrapper`: Sets the layout and spacing for the component.
+- `.product`: Styles for individual product cards.
+- `.load-more-button`: Styles for the "Load More" button.
+
+#### API Reference
+
+The component fetches products from a sample API endpoint such as:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "image": "https://via.placeholder.com/150",
+    "price": "$100"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "image": "https://via.placeholder.com/150",
+    "price": "$150"
+  },
+  // Additional product objects...
+]
+```
+
 #### Installation
 
 To get started with this project:
@@ -287,4 +364,4 @@ npm run dev
 
 #### Conclusion
 
-The Accordion component exemplifies how to build interactive UIs in React. This repository aims to serve as a learning tool and a reference for building diverse React projects. Feel free to explore, modify, and expand upon the projects within this application!
+This repository aims to serve as a learning tool and a reference for building diverse React projects. Feel free to explore, modify, and expand upon the projects within this application!
