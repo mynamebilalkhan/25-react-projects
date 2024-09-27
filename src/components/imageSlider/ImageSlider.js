@@ -3,7 +3,7 @@ import "./ImageSlider.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const ImageSlider = () => {
-  const url = "https://picsum.photos/v2/list?page=1";
+  const url = "https://picsum.photos/v2/list?page=2&limit=10";
   const [images, setImages] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={{ backgroundColor: "#35245E" }}>
       <div className="container">
         <div className="image-slider-container">
           {loading ? <h1>Loading...</h1> : ""}
