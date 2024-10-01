@@ -1,0 +1,18 @@
+.qr-code-input-box{
+     justify-content: center;
+     display: flex;
+     gap: 15px;
+     margin-bottom: 20px;
+}
+
+.qr-code-box {
+    justify-content: center;
+    display: flex;
+}
+
+.qr-code-input-box input{
+     height: 40px;
+     border: none;
+     padding: 0 20px;
+     border-radius: 5px;
+}
