@@ -334,6 +334,147 @@ The component fetches products from a sample API endpoint such as:
 ]
 ```
 
+## Project 6
+
+### TreeView Component
+
+#### Overview
+
+The `TreeView` component is a dynamic and interactive navigation menu built using React. This component displays a hierarchical structure of menu items with nested submenus, allowing users to explore and navigate through various categories and subcategories of the application in a clean and organized manner.
+
+#### Features
+
+- **Expandable/Collapsible Items:** Users can expand or collapse menu items to view or hide nested submenus using intuitive icons.
+- **Nested Structure Support:** The component can render any number of nested levels, making it suitable for complex navigation structures.
+- **Dynamic Data Rendering:** The component dynamically renders the menu items based on the provided data structure, ensuring flexibility and scalability.
+
+#### Project Structure
+
+The component is divided into multiple files to maintain separation of concerns:
+
+1. **TreeView.js:** The main container component that holds the entire TreeView structure and imports other components.
+2. **MenuList.js:** A functional component that renders a list of `MenuItem` components based on the provided data.
+3. **MenuItem.js:** The component responsible for rendering individual menu items, handling clicks, and managing their state (expanded/collapsed).
+4. **data.js:** Contains the sample hierarchical data used for rendering the tree view.
+5. **TreeView.css:** Styles the tree view, providing visual cues for expanded and collapsed states, nested levels, and menu item hierarchy.
+
+#### Data Structure
+
+The `TreeView` component expects a data structure with nested levels of menu items. Each item should have the following properties:
+
+- `label`: The text label displayed on the menu item.
+- `to`: The path or URL that the item links to.
+- `children` (optional): An array of sub-items that will be displayed as nested submenus.
+
+Here’s a sample data structure used in the project:
+
+```js
+export const treeViewData = [
+  {
+    label: "Home",
+    to: "/",
+  },
+  {
+    label: "Profile",
+    to: "/profile",
+    children: [
+      {
+        label: "Details",
+        to: "/details",
+        children: [
+          {
+            label: "Location",
+            to: "/location",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Settings",
+    to: "/settings",
+    children: [
+      {
+        label: "Account",
+        to: "/account",
+      },
+    ],
+  },
+  {
+    label: "Security",
+    to: "/security",
+    children: [
+      {
+        label: "Login",
+        to: "/login",
+      },
+      {
+        label: "Register",
+        to: "/register",
+      },
+    ],
+  },
+];
+```
+
+#### How It Works
+
+1. **MenuItem Component:**
+  - Each `MenuItem` receives an item object and uses the `useState` hook to manage the visibility of its child items.
+  - Clicking on a menu item with children toggles the visibility of the nested submenu using icons (`FaPlus` and `FaMinus` from `react-icons`).
+
+2. **MenuList Component:**
+  - This component accepts a list of menu items and maps over them, rendering each as a `MenuItem` component.
+  - If a menu item has children, `MenuList` recursively renders the nested submenus within the current menu.
+
+3. **TreeView Component:**
+  - The root component that serves as the entry point for the tree view.
+  - It imports the hierarchical data and passes it as a prop to the `MenuList` component.
+
+#### Usage
+
+To use the `TreeView` component in your React application:
+
+1. **Import the component:**
+
+```jsx
+import TreeView from './TreeView';
+```
+
+2. **Include it in your JSX:**
+
+```jsx
+function App() {
+  return (
+    <div className="App">
+      <h1>TreeView Navigation Menu</h1>
+      <TreeView />
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Project 7
+
+### QR Code Generator
+
+This project is a simple QR Code Generator built using React. It allows users to input a value, generate a QR code for that value, and display it on the screen.
+
+#### Features
+
+- **Dynamic QR Code Generation:** The QR code updates based on the user's input value.
+- **Input Field:** Allows users to enter any value they wish to convert into a QR code.
+- **Generate Button:** On clicking the generate button, the entered value is converted into a QR code.
+- **Disable Input:** Once the QR code is generated, the input field is disabled to prevent accidental modifications.
+
+#### Technologies Used
+
+- **React:** A JavaScript library for building user interfaces.
+- **react-qr-code:** A library to generate QR codes in React.
+- **CSS:** Styling for the QR code generator UI.
+
 #### Installation
 
 To get started with this project:
