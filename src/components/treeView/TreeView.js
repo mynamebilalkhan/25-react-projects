@@ -4,7 +4,11 @@ import { treeViewData } from "./data";
 
 const TreeView = () => {
   //   console.log("Tree View Data: ", treeViewData);
-  return <MenuList list={treeViewData} />;
+  return (
+    <div className="tree-view-container">
+      <MenuList list={treeViewData} />
+    </div>
+  );
 };
 
 export default TreeView;

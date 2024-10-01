@@ -1,4 +1,5 @@
 import MenuItem from "./MenuItem";
+import "./TreeView.css";
 
 const MenuList = ({ list = [] }) => {
   return (
