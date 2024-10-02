@@ -13,6 +13,7 @@ const LightDarkMode = () => {
         <div className="mode-change-container">
           <h1>Change Color Mode</h1>
           <button onClick={handleToggleTheme}>Change Theme</button>
+          <p>Theme {theme}</p>
         </div>
       </div>
     </div>

@@ -39,3 +39,7 @@
      background-color: var(--button-bg);
      color: var(--button-text);
 }
+
+.light-dark-mode p{
+     text-transform: capitalize;
+}
