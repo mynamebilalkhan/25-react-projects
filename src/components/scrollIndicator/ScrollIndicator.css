@@ -1,0 +1,21 @@
+.scrollIndicator-container{
+     padding: 100px 0;
+}
+.top-container{
+     position: sticky;
+     top: 0;
+     z-index: 1;
+     width: 100%;
+     background-color: #000;
+}
+
+.scroll-progress-tracking-container{
+     width: 100%;
+     height: 10px;
+     background-color: #ccc;
+}
+
+.current-progress{
+     height: 10px;
+     background-color: #333;
+}

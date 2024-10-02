@@ -489,6 +489,19 @@ This project demonstrates a simple implementation of a light/dark theme toggle f
 - **Local Storage Integration:** The theme preference is stored in local storage, so it persists between page reloads.
 - **Custom Hook (`useLocalStorage`):** A custom hook is used to manage local storage state in a clean and reusable way.
 
+## Project 9
+
+### Scrollbar Indicator
+
+#### Overview
+
+The Scrollbar Indicator project demonstrates how to create a scroll indicator that shows the percentage of the page that has been scrolled. It fetches a list of products from a dummy API and displays them, alongside a visual representation of the scroll progress.
+
+## Features
+
+- Fetches and displays a list of products from the Dummy JSON API.
+- Shows a scrollbar indicator that reflects the user's scroll percentage on the page.
+
 #### Installation
 
 To get started with this project:
