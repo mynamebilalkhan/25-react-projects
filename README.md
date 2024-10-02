@@ -475,6 +475,20 @@ This project is a simple QR Code Generator built using React. It allows users to
 - **react-qr-code:** A library to generate QR codes in React.
 - **CSS:** Styling for the QR code generator UI.
 
+## Project 8
+
+### Light Dark Mode
+
+#### Overview
+
+This project demonstrates a simple implementation of a light/dark theme toggle feature in a React application. The selected theme (either "light" or "dark") is stored in the browser's local storage using a custom React hook, `useLocalStorage`. This ensures that the user's theme preference is preserved even after a page reload.
+
+#### Features
+
+- **Light/Dark Mode Toggle:** Users can switch between light and dark themes using a button.
+- **Local Storage Integration:** The theme preference is stored in local storage, so it persists between page reloads.
+- **Custom Hook (`useLocalStorage`):** A custom hook is used to manage local storage state in a clean and reusable way.
+
 #### Installation
 
 To get started with this project:
