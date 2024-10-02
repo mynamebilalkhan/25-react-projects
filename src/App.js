@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordian from "./components/accordian/Accordian";
 import ImageSlider from "./components/imageSlider/ImageSlider";
+import LightDarkMode from "./components/lightDarkMode/LightDarkMode";
 import LoadMore from "./components/loadmore/LoadMore";
 import QRCodeGenerator from "./components/qrCodeGenerator/QRCodeGenerator";
 import RandomColor from "./components/randomColor/RandomColor";
@@ -10,6 +11,7 @@ import TreeView from "./components/treeView/TreeView";
 function App() {
   return (
     <>
+      <LightDarkMode />
       <QRCodeGenerator />
       <TreeView />
       <LoadMore />

@@ -1,0 +1,41 @@
+:root{
+     --background: #fff;
+     --text-primary: #242424;
+     --button-bg: #1a1a1a;
+     --button-text: #fff;
+}
+
+*{
+     transition: all .5s ease;
+     -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+     -o-transition: all .5s ease;
+}
+
+.mode-change-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+[data-theme='dark']{
+     --background: #242424;
+     --text-primary: #fff;
+     --button-bg: #1a1a1a;
+     --button-text: #fff;
+}
+
+.light-dark-mode{
+     background-color: var(--background);
+}
+
+.light-dark-mode *{
+     color: var(--text-primary);
+}
+
+.light-dark-mode button{
+     background-color: var(--button-bg);
+     color: var(--button-text);
+}
