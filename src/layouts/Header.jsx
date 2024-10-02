@@ -14,7 +14,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Project List One" id="basic-nav-dropdown">
+            <NavDropdown title="Project List One" id="dropdown-one">
               <LinkContainer to="/accordian">
                 <NavDropdown.Item>Accordian</NavDropdown.Item>
               </LinkContainer>
@@ -31,7 +31,7 @@ const Header = () => {
                 <NavDropdown.Item>Load More</NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
-            <NavDropdown title="Project List Two" id="basic-nav-dropdown">
+            <NavDropdown title="Project List Two" id="dropdown-two">
               <LinkContainer to="/tree-view">
                 <NavDropdown.Item>Tree View</NavDropdown.Item>
               </LinkContainer>
@@ -46,6 +46,11 @@ const Header = () => {
               </LinkContainer>
               <LinkContainer to="/tabs">
                 <NavDropdown.Item>Tabs</NavDropdown.Item>
+              </LinkContainer>
+            </NavDropdown>
+            <NavDropdown title="Project List Three" id="dropdown-three">
+              <LinkContainer to="/modal">
+                <NavDropdown.Item>Modal</NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
           </Nav>
