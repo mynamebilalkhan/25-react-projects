@@ -1,0 +1,55 @@
+.dev-modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    width: 60%;
+    animation-name: animateModal;
+     animation-duration: .5s;
+}
+
+@keyframes animateModal{
+     from{
+          top: -200px;
+          opacity: 0;
+     }
+     to{
+          top: 0;
+          opacity: 1;
+     }
+}
+
+.dev-modal-header {
+    position: relative;
+    padding: 25px;
+}
+
+.close-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    right: -35px;
+    top: -35px;
+    font-size: 30px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.dev-modal-footer {
+    position: relative;
+    padding: 25px;
+}

@@ -547,3 +547,17 @@ The Tabs component is a reusable UI component that allows users to switch betwee
 - Multiple tabs can be created with corresponding content.
 - Users can switch between tabs to view different content.
 - Supports callback for tab change events.
+
+## Project 11
+
+### Modal
+
+#### Overview
+
+The `Modal` component is a reusable UI element that displays content in a popup dialog box over the current page. It can be used to show information, get user inputs, or display warnings and messages. The modal comes with customizable `header`, `body`, and `footer` sections, making it versatile for various use cases.
+
+#### Features
+
+- Customizable `header`, `body`, and `footer` sections.
+- `Modal` can be opened and closed with ease.
+- Easily integrate and use it within your projects.
