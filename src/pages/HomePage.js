@@ -6,11 +6,13 @@ import QRCodeGenerator from "../components/qrCodeGenerator/QRCodeGenerator";
 import RandomColor from "../components/randomColor/RandomColor";
 import ScrollIndicator from "../components/scrollIndicator/ScrollIndicator";
 import StarRating from "../components/starRating/StarRating";
+import TabsTest from "../components/tabs/TabsTest";
 import TreeView from "../components/treeView/TreeView";
 
 const HomePage = () => {
   return (
     <>
+      <TabsTest />
       <ScrollIndicator />
       <TreeView />
       <LightDarkMode />

@@ -1,0 +1,15 @@
+.heading{
+     display: flex;
+     gap: 20px;
+}
+
+.tab-buttons {
+    background-color: #ccc;
+    padding: 10px 40px;
+    border-radius: 5px;
+     cursor: pointer;
+}
+
+.content{
+     margin-top: 15px;
+}

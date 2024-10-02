@@ -44,6 +44,9 @@ const Header = () => {
               <LinkContainer to="/scroll-indicator">
                 <NavDropdown.Item>Scroll Indicator</NavDropdown.Item>
               </LinkContainer>
+              <LinkContainer to="/tabs">
+                <NavDropdown.Item>Tabs</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
