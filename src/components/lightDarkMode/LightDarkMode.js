@@ -1,4 +1,4 @@
-import "./lightDarkMode.css";
+import "./LightDarkMode.css";
 import useLocalStorage from "./useLocalStorage";
 const LightDarkMode = () => {
   const [theme, setTheme] = useLocalStorage("theme", "dark");
