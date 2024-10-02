@@ -1,19 +1,21 @@
-import Accordian from "../components/accordian/Accordian";
-import ImageSlider from "../components/imageSlider/ImageSlider";
-import LightDarkMode from "../components/lightDarkMode/LightDarkMode";
-import LoadMore from "../components/loadmore/LoadMore";
-import ModalWrap from "../components/modal/ModalWrap";
-import QRCodeGenerator from "../components/qrCodeGenerator/QRCodeGenerator";
-import RandomColor from "../components/randomColor/RandomColor";
-import ScrollIndicator from "../components/scrollIndicator/ScrollIndicator";
-import StarRating from "../components/starRating/StarRating";
-import TabsTest from "../components/tabs/TabsTest";
-import TreeView from "../components/treeView/TreeView";
+// import Accordian from "../components/accordian/Accordian";
+import GithubProfileFinder from "../components/githubProfileFinder/GithubProfileFinder";
+// import ImageSlider from "../components/imageSlider/ImageSlider";
+// import LightDarkMode from "../components/lightDarkMode/LightDarkMode";
+// import LoadMore from "../components/loadmore/LoadMore";
+// import ModalWrap from "../components/modal/ModalWrap";
+// import QRCodeGenerator from "../components/qrCodeGenerator/QRCodeGenerator";
+// import RandomColor from "../components/randomColor/RandomColor";
+// import ScrollIndicator from "../components/scrollIndicator/ScrollIndicator";
+// import StarRating from "../components/starRating/StarRating";
+// import TabsTest from "../components/tabs/TabsTest";
+// import TreeView from "../components/treeView/TreeView";
 
 const HomePage = () => {
   return (
     <>
-      <ModalWrap />
+      <GithubProfileFinder />
+      {/* <ModalWrap />
       <TabsTest />
       <ScrollIndicator />
       <TreeView />
@@ -23,7 +25,7 @@ const HomePage = () => {
       <RandomColor />
       <LoadMore />
       <ImageSlider />
-      <Accordian />
+      <Accordian /> */}
     </>
   );
 };

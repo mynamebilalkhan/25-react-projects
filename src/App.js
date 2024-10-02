@@ -17,6 +17,7 @@ import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import TabsTest from "./components/tabs/TabsTest";
 import ModalWrap from "./components/modal/ModalWrap";
+import GithubProfileFinder from "./components/githubProfileFinder/GithubProfileFinder";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="/scroll-indicator" element={<ScrollIndicator />} />
       <Route path="/tabs" element={<TabsTest />} />
       <Route path="/modal" element={<ModalWrap />} />
+      <Route path="/github-profile-finder" element={<GithubProfileFinder />} />
     </Route>
   )
 );
