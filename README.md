@@ -8,6 +8,38 @@ This repository contains a single React application that integrates 25 different
 
 The app is organized into distinct components, each representing a different project. This modular approach allows for easy navigation and understanding of the individual projects while maintaining a cohesive application structure.
 
+#### Installation
+
+To get started with this project:
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate into the project directory:
+
+```bash
+cd 25-react-projects
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+#### Conclusion
+
+This repository aims to serve as a learning tool and a reference for building diverse React projects. Feel free to explore, modify, and expand upon the projects within this application!
+
 ## Project 1
 
 ### Accordion Component
@@ -502,34 +534,16 @@ The Scrollbar Indicator project demonstrates how to create a scroll indicator th
 - Fetches and displays a list of products from the Dummy JSON API.
 - Shows a scrollbar indicator that reflects the user's scroll percentage on the page.
 
-#### Installation
+## Project 10
 
-To get started with this project:
+### Tabs Component
 
-1. Clone the repository:
+#### Overview
 
-```bash
-git clone <repository-url>
-```
+The Tabs component is a reusable UI component that allows users to switch between different content sections using tabs. Each tab can display its own content, making it useful for organizing information in a compact and user-friendly way.
 
-2. Navigate into the project directory:
+#### Features
 
-```bash
-cd 25-react-projects
-```
-
-3. Install the dependencies:
-
-```bash
-npm install
-```
-
-4. Start the development server:
-
-```bash
-npm run dev
-```
-
-#### Conclusion
-
-This repository aims to serve as a learning tool and a reference for building diverse React projects. Feel free to explore, modify, and expand upon the projects within this application!
+- Multiple tabs can be created with corresponding content.
+- Users can switch between tabs to view different content.
+- Supports callback for tab change events.

@@ -1,3 +1,9 @@
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 import Accordian from "./components/accordian/Accordian";
 import ImageSlider from "./components/imageSlider/ImageSlider";
 import LightDarkMode from "./components/lightDarkMode/LightDarkMode";
@@ -8,13 +14,8 @@ import ScrollIndicator from "./components/scrollIndicator/ScrollIndicator";
 import StarRating from "./components/starRating/StarRating";
 import TreeView from "./components/treeView/TreeView";
 import MainLayout from "./layouts/MainLayout";
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import TabsTest from "./components/tabs/TabsTest";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/qr-code-generator" element={<QRCodeGenerator />} />
       <Route path="/light-dark-mode" element={<LightDarkMode />} />
       <Route path="/scroll-indicator" element={<ScrollIndicator />} />
+      <Route path="/tabs" element={<TabsTest />} />
     </Route>
   )
 );
