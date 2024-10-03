@@ -52,6 +52,9 @@ const Header = () => {
               <LinkContainer to="/modal">
                 <NavDropdown.Item>Modal</NavDropdown.Item>
               </LinkContainer>
+              <LinkContainer to="/github-profile-finder">
+                <NavDropdown.Item>Github Profile Finder</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

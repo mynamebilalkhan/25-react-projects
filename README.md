@@ -492,20 +492,47 @@ export default App;
 
 ### QR Code Generator
 
-This project is a simple QR Code Generator built using React. It allows users to input a value, generate a QR code for that value, and display it on the screen.
+#### Overview
+
+The `QRCodeGenerator` component is a React application that generates a QR code based on user input. This tool is useful for converting text, URLs, or other information into a QR code format that can be scanned by QR code readers.
 
 #### Features
 
-- **Dynamic QR Code Generation:** The QR code updates based on the user's input value.
-- **Input Field:** Allows users to enter any value they wish to convert into a QR code.
-- **Generate Button:** On clicking the generate button, the entered value is converted into a QR code.
-- **Disable Input:** Once the QR code is generated, the input field is disabled to prevent accidental modifications.
+- **Dynamic QR Code Generation:** The QR code is updated in real-time based on user input.
+- **Customizable QR Code Size:** Users can select different sizes for the generated QR code.
+- **Downloadable Image:** The component allows users to download the generated QR code as an image file.
 
-#### Technologies Used
+#### Functionality
 
-- **React:** A JavaScript library for building user interfaces.
-- **react-qr-code:** A library to generate QR codes in React.
-- **CSS:** Styling for the QR code generator UI.
+1. **State Management:**
+   - `inputValue`: Tracks the current user input.
+   - `qrCodeUrl`: Holds the URL for the generated QR code image.
+
+2. **Event Handlers:**
+   - `handleInputChange()`: Updates the inputValue state with the user's input.
+   - `generateQRCode()`: Generates the QR code using a third-party library or API and updates the qrCodeUrl state.
+
+3. **Rendering:**
+   - Displays the input field, size selector, and QR code image based on the user's input and selected size.
+   - The "Download" button allows the user to download the QR code as an image.
+
+#### Usage
+
+To use the `QRCodeGenerator` component, import it into your application and include it in your JSX:
+
+```jsx
+import QRCodeGenerator from './QRCodeGenerator';
+
+function App() {
+  return (
+    <div>
+      <QRCodeGenerator />
+    </div>
+  );
+}
+
+export default App;
+```
 
 ## Project 8
 
@@ -513,13 +540,46 @@ This project is a simple QR Code Generator built using React. It allows users to
 
 #### Overview
 
-This project demonstrates a simple implementation of a light/dark theme toggle feature in a React application. The selected theme (either "light" or "dark") is stored in the browser's local storage using a custom React hook, `useLocalStorage`. This ensures that the user's theme preference is preserved even after a page reload.
+The `LightDarkMode` component allows users to switch between light and dark themes for the application. This feature enhances the user experience by providing a more comfortable viewing option based on their preference.
 
 #### Features
 
-- **Light/Dark Mode Toggle:** Users can switch between light and dark themes using a button.
-- **Local Storage Integration:** The theme preference is stored in local storage, so it persists between page reloads.
-- **Custom Hook (`useLocalStorage`):** A custom hook is used to manage local storage state in a clean and reusable way.
+- **Theme Toggle:** Users can switch between light and dark themes with a single button click.
+- **Persisted State:** The selected theme is stored in local storage, so the preference persists across page reloads.
+- **Dynamic Styling:** The component dynamically adjusts the CSS based on the selected theme.
+
+#### Functionality
+
+1. **State Management:**
+   - `theme`: Tracks the current theme (either "light" or "dark").
+
+2. **Event Handlers:**
+   - `toggleTheme()`: Toggles the theme state between "light" and "dark" and updates the local storage accordingly.
+
+3. **Rendering:**
+   - Applies different CSS classes or styles based on the current theme, affecting background color, text color, and other UI elements.
+
+#### Usage
+
+To use the `LightDarkMode` component, import it into your application and include it in your JSX:
+
+```jsx
+import LightDarkMode from './LightDarkMode';
+
+function App() {
+  return (
+    <div>
+      <LightDarkMode />
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Styling
+
+The component uses CSS classes defined for both light and dark themes, making it easy to customize the appearance based on the current state.
 
 ## Project 9
 
@@ -527,12 +587,58 @@ This project demonstrates a simple implementation of a light/dark theme toggle f
 
 #### Overview
 
-The Scrollbar Indicator project demonstrates how to create a scroll indicator that shows the percentage of the page that has been scrolled. It fetches a list of products from a dummy API and displays them, alongside a visual representation of the scroll progress.
+The Scrollbar Indicator component provides a visual progress bar at the top of the viewport to indicate how far a user has scrolled down a page. This is a great UX enhancement for content-heavy pages, such as articles or documentation, as it helps users see their reading progress.
 
 ## Features
 
-- Fetches and displays a list of products from the Dummy JSON API.
-- Shows a scrollbar indicator that reflects the user's scroll percentage on the page.
+- **Dynamic Progress Bar:** The progress bar updates dynamically as the user scrolls through the page.
+- **Smooth Transition:** The component uses smooth animations to show the progress visually.
+- **Customizable Styles:** The progress bar's color, height, and other styling properties can be easily customized through CSS or props.
+
+#### Functionality
+
+1. State Management:
+   - `scrollProgress`: A state value that tracks the current scroll position as a percentage of the total scrollable height of the page.
+
+2. Event Listeners:
+   - `handleScroll`: Updates the `scrollProgress` value when the user scrolls, providing real-time feedback.
+
+3. Rendering:
+   - The component renders a fixed-position div at the top of the page that visually indicates the user's scroll position as a colored progress bar.
+
+#### Usage
+
+To use the `ScrollbarIndicator` component, import it into your application and include it at the top level of your layout:
+
+```jsx
+import ScrollbarIndicator from './ScrollbarIndicator';
+
+function App() {
+  return (
+    <div>
+      <ScrollbarIndicator />
+      {/* Your other content goes here */}
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Styling
+
+The component uses the following CSS classes defined in `ScrollbarIndicator.css`:
+
+- `.progress-bar-wrapper`: Applies styles to the container of the progress bar.
+- `.progress-bar`: Styles the actual progress bar that reflects scroll progress.
+
+#### Customization
+
+You can customize the component by modifying the CSS or by passing in props for:
+
+- **Bar Color:** Change the color of the progress bar.
+- **Bar Height:** Adjust the height of the progress bar to suit your design needs.
+- **Transition Speed:** Customize the smoothness of the animation for the scroll indicator.
 
 ## Project 10
 
@@ -561,3 +667,52 @@ The `Modal` component is a reusable UI element that displays content in a popup 
 - Customizable `header`, `body`, and `footer` sections.
 - `Modal` can be opened and closed with ease.
 - Easily integrate and use it within your projects.
+
+## Project 12
+
+### GitHub Profile Finder
+
+#### Overview
+
+The **GitHub Profile Finder** allows users to search for GitHub profiles by entering a username. The application fetches detailed information about the user, including their `repositories`, `followers`, `following`, and additional profile data such as `location`, `bio`, and hireable status. It's a great tool for quickly viewing key details of a GitHub user.
+
+#### Features
+
+- **Search Profiles by Username:** Users can enter a GitHub username to search for profiles and get detailed information.
+- **Profile Details:** The application displays a variety of user details, including name, bio, company, location, and public repositories.
+- **Social Links:** Users can view social links such as the user's Twitter account, blog, and email if available.
+- **GitHub Stats:** A summary of the user's GitHub stats is presented visually, showing the number of repositories, gists, followers, and more.
+- **User-Friendly UI:** The interface is designed to present the information in a well-structured and easy-to-read manner.
+
+#### Usage
+
+1. **Search Functionality:**
+   - Enter a GitHub username in the search bar.
+   - Click the "Search" button to fetch and display the profile information.
+
+2. **Profile Overview:**
+   - Displays the user's avatar, name, and bio.
+   - Includes a direct link to the GitHub profile and social links (Twitter, blog, etc.) if available.
+
+3. **Statistics and Repositories:**
+   - Provides a visual summary of public repositories, gists, followers, and following.
+   - Detailed lists of repositories can be displayed based on user preference.
+
+#### Example User Data
+
+When a user profile is successfully found, it displays details such as:
+
+- **Name:** John Doe
+- **Bio:** Full-stack developer passionate about open source.
+- **Company:** Example Inc.
+- **Location:** San Francisco, USA
+- **Public Repositories:** 42
+- **Followers:** 350
+- **Following:** 180
+- **Twitter:** @johndoe
+- **Blog:** johndoe.dev
+- **Email:** johndoe@example.com
+
+#### How It Works
+
+The application leverages the GitHub API to fetch real-time data for each user based on the username input. The fetched data is then displayed in a clean and organized format, making it easy to view key details at a glance.
