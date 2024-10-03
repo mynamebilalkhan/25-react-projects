@@ -8,26 +8,30 @@ const GithubProfileFinder = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {};
+  const fetchGithubUser = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(`https://api.github.com/users/${username}`);
+      const data = await res.json();
+      if (data) {
+        console.log(data);
+        setUserData(data);
+        setLoading(false);
+        setUsername("");
+      }
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchGithubUser = async () => {
-      setLoading(true);
-      try {
-        const res = await fetch(`https://api.github.com/users/${username}`);
-        const data = await res.json();
-        if (data) {
-          console.log(data);
-          setUserData(data);
-          setLoading(false);
-        }
-      } catch (error) {
-        console.log(error);
-        setLoading(false);
-      }
-    };
     fetchGithubUser();
   }, []);
+
+  const handleSubmit = () => {
+    fetchGithubUser();
+  };
 
   if (loading) {
     return (
@@ -49,7 +53,7 @@ const GithubProfileFinder = () => {
             <Form.Control
               type="text"
               placeholder="Search by username..."
-              value={username}
+              defaultValue={username}
               onChange={(event) => setUsername(event.target.value)}
             />
             <Button type="submit" className="mt-2" onClick={handleSubmit}>
