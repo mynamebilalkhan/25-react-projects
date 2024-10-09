@@ -716,3 +716,41 @@ When a user profile is successfully found, it displays details such as:
 #### How It Works
 
 The application leverages the GitHub API to fetch real-time data for each user based on the username input. The fetched data is then displayed in a clean and organized format, making it easy to view key details at a glance.
+
+## Project 13
+
+### Search AutoComplete
+
+#### Description
+
+The **Search AutoComplete** project is an interactive application that dynamically provides user suggestions as you type in the search box. It helps users to find and select items quickly by displaying a dropdown of filtered suggestions based on their input. This project fetches a list of users from an external API and provides an intuitive auto-complete functionality.
+
+#### Features
+
+- **Dynamic Search and Filtering:** As you type in the search field, the app dynamically filters through a list of user names to display suggestions that match your input.
+- **User-Friendly Dropdown:** The filtered user suggestions appear in a dropdown below the search box, making it easy for users to pick a suggestion.
+- **Click to Select:** Users can click on any suggestion from the dropdown list to automatically fill the search box with the selected value.
+- **Loading State Management:** A loading message is displayed while the user data is being fetched from the API.
+- **Error Handling:** The application gracefully handles errors during data fetching, ensuring a smooth user experience.
+
+#### Component Structure
+
+`SearchAutoComplete`
+
+This is the main component responsible for rendering the search bar and handling the state of the application. It includes:
+
+- States:
+ - `loading`: Boolean to indicate if the user data is being fetched.
+ - `users`: Array to store the list of user names fetched from the API.
+ - `error`: To store any errors encountered during data fetching.
+ - `searchParam`: To store the current search query.
+ - `showDropdown`: Boolean to manage the visibility of the suggestions dropdown.
+ - `filterdUsers`: Array to store the filtered list of user names based on the search input.
+- Functions:
+ - `fetchUserList`: Asynchronously fetches the user data from the API and populates the users state.
+ - `handleChange`: Filters the users list based on the user's input and displays the dropdown with suggestions.
+ - `handleSuggestionClick`: Sets the selected suggestion as the search parameter and hides the dropdown.
+
+`Suggestions`
+
+This component receives the `data` (filtered user names) and `onSuggestionClick` function as props. It renders a list of suggestions, each of which is clickable and triggers the `onSuggestionClick` function.
