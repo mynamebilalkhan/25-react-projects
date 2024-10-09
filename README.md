@@ -740,16 +740,16 @@ The **Search AutoComplete** project is an interactive application that dynamical
 This is the main component responsible for rendering the search bar and handling the state of the application. It includes:
 
 - States:
- - `loading`: Boolean to indicate if the user data is being fetched.
- - `users`: Array to store the list of user names fetched from the API.
- - `error`: To store any errors encountered during data fetching.
- - `searchParam`: To store the current search query.
- - `showDropdown`: Boolean to manage the visibility of the suggestions dropdown.
- - `filterdUsers`: Array to store the filtered list of user names based on the search input.
+   - `loading`: Boolean to indicate if the user data is being fetched.
+   - `users`: Array to store the list of user names fetched from the API.
+   - `error`: To store any errors encountered during data fetching.
+   - `searchParam`: To store the current search query.
+   - `showDropdown`: Boolean to manage the visibility of the suggestions dropdown.
+   - `filterdUsers`: Array to store the filtered list of user names based on the search input.
 - Functions:
- - `fetchUserList`: Asynchronously fetches the user data from the API and populates the users state.
- - `handleChange`: Filters the users list based on the user's input and displays the dropdown with suggestions.
- - `handleSuggestionClick`: Sets the selected suggestion as the search parameter and hides the dropdown.
+   - `fetchUserList`: Asynchronously fetches the user data from the API and populates the users state.
+   - `handleChange`: Filters the users list based on the user's input and displays the dropdown with suggestions.
+   - `handleSuggestionClick`: Sets the selected suggestion as the search parameter and hides the dropdown.
 
 `Suggestions`
 
