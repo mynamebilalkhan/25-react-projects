@@ -55,6 +55,9 @@ const Header = () => {
               <LinkContainer to="/github-profile-finder">
                 <NavDropdown.Item>Github Profile Finder</NavDropdown.Item>
               </LinkContainer>
+              <LinkContainer to="/search-user-autocomplete">
+                <NavDropdown.Item>Search Auto Complete</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
