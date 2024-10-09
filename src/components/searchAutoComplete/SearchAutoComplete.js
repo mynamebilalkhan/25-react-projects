@@ -47,13 +47,10 @@ const SearchAutoComplete = () => {
   };
 
   const handleSuggestionClick = (e) => {
-    console.log(e.target.innerText);
     setSearchParam(e.target.innerText);
     setShowDropdown(false);
     setFilterdUsers([]);
   };
-
-  console.log(users, filterdUsers);
 
   if (loading) {
     return (
